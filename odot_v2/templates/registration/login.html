@@ -1,0 +1,44 @@
+{% comment %} <h2>Login Page</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Login</button>
+</form> {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ODOT_V2 </title>
+    <link rel="stylesheet", href="'static', filename='css/style.css')>
+    <link rel="icon" href="/static/images/phone.png">
+    
+</head>
+<body class="content">
+
+    <div class="wrapper ">
+        <div id="form-content">
+          <!-- Tabs Titles -->
+          {%if user.is_authenticated %}
+          <h2> Welcome, {{user.username}}</h2>
+          {% endif %}
+          {% comment %} <h2 class="active"><a href="{{ url_for('login')}}"> login </a></h2> {% endcomment %}
+          {% comment %} <h2 class="inactive underlineHover"><a href='templates/registration/signup.html'>Sign Up </a></h2> {% endcomment %}
+      
+          <!-- Logo -->
+          <div class="logo">
+            <img src="/static/images/Logo.png" id="logo" alt="User Logo" />
+          </div>
+   
+    <br>
+    <h1> ODOT Project </h1>
+    <h2>Login Page</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Login</button>
+</form>
+
+    <a href="templates/registration/signup.html">Register if you don't have an account </a>
+</body>
+</html>

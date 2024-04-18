@@ -1,0 +1,11 @@
+{%block content%}
+    {% if user.is_authenticated %}
+        <h2> Welocome,  {{user.username}}</h2>
+        {% else %}
+        <h2>you are not logged in</h2>
+        <a href="{% url 'login'  %}"> login </a>
+{% endif %}
+
+
+
+{% endblock %}
