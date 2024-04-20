@@ -1,0 +1,61 @@
+:root {
+    --primary-color: hsl(243, 72%, 59%);
+    --primary-hover-color: hsl(243, 72%, 55%);
+  }
+  
+  html {
+    height: 100%;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, transparent, hsl(232, 48%, 89%));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  form h2 {
+    margin-top: 0;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: none;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+  }
+  
+  form button:hover {
+    background-color: var(--primary-hover-color);
+  }
+  
