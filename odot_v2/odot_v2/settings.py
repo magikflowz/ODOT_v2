@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'odot_v2',
     'home.apps.HomeConfig',
+    'channels',
+    'channels-reddis'
 ]
 
 MIDDLEWARE = [
@@ -118,7 +120,13 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_I18N = True
+
 USE_TZ = True
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+ASGI_APPLICATION = 'odot_v2'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
