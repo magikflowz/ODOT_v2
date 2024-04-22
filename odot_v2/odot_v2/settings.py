@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'odot_v2',
     'home.apps.HomeConfig',
     'channels',
-    'channels-reddis'
+    'channels_redis'
 ]
 
 MIDDLEWARE = [

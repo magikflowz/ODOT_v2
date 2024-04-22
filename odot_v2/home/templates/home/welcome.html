@@ -1,7 +1,13 @@
-{% extends 'base.html' %}
+{%  extends 'base.html' %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'style.css' %}">
 {% block content %}
-<h1> ODOT_v2 Home Page </h1>
+    {% load plotly_dash %}
+<h1>ODOT_V2 Dashboard </h1>
+
+    <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">
+    {% plotly_app name='SimpleExample' ratio=0.45 %}
+    </div>
+<br>
+    {{ plot1 | safe }}
 
 {% endblock %}
